@@ -1,6 +1,17 @@
 <template>
-  <div class="container">
+  <div>
+    <!-- <img class="vorlage" src="mobile-menu-vorlage.png" alt="" /> -->
     <the-navbar></the-navbar>
-    <Nuxt />
+    <Nuxt class="container" />
   </div>
 </template>
+
+<style scoped>
+.vorlage {
+  z-index: -9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+</style>
