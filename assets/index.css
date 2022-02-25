@@ -316,3 +316,10 @@ select {
 .dot-indicators > [aria-selected='true'] {
   background-color: hsl(var(--clr-white) / 1);
 }
+/* -------------- */
+/*   custom css   */
+/* -------------- */
+
+body {
+  background-size: cover;
+}

@@ -1,9 +1,19 @@
 <template>
-  <ul>
-    <li v-for="member in crew" :key="member.id">
-      {{ member.title.rendered }}
-    </li>
-  </ul>
+  <div>
+    <div v-if="member">
+      <div>
+        {{ member['crew-name'] }}
+      </div>
+      <img :src="member['webp-image'].guid" alt="" />
+    </div>
+    <button
+      v-for="(item, index) in crew"
+      :key="index"
+      @click="setMember(index)"
+    >
+      {{ index + 1 }}
+    </button>
+  </div>
 </template>
 
 <script>
@@ -11,7 +21,13 @@ export default {
   data() {
     return {
       crew: [],
+      active: 0,
     }
+  },
+  computed: {
+    member() {
+      return this.crew[this.crew.length - 1 - this.active]
+    },
   },
   methods: {
     async loadData() {
@@ -20,10 +36,13 @@ export default {
       )
       this.crew = await response.json()
     },
+    setMember(value) {
+      this.active = value
+    },
   },
   mounted() {
     this.loadData()
-    console.log('mounted')
+    document.body.style.backgroundImage = "url('background-crew-mobile.jpg')"
   },
 }
 </script>
