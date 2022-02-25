@@ -54,7 +54,7 @@
         <h2 class="text-2xl leading-7 font-semibold">
           Welcome to your Nuxt Application
         </h2>
-        <p class="mt-3 text-gray-600">
+        <p class="bg-dark text-white">
           We recommend you take a look at the
           <a
             href="https://nuxtjs.org"
