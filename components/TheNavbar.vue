@@ -10,7 +10,7 @@
       />
     </div>
 
-    <div class="slider flex" :class="{ active: active }">
+    <div v-if="active" class="slider flex" :class="{ active: active }">
       <img
         src="icon-close.svg"
         alt=""

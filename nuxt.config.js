@@ -14,7 +14,13 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon-32x32.png' }],
+
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon-32x32.png' },
+    { rel: "preconnect", href: "https://fonts.googleapis.com", crossorigin: true },
+    { rel: "preconnect", href: "https://fonts.gstatic.com" },
+    { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" }
+
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -37,4 +43,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-}
+};
