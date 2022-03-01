@@ -2,6 +2,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  router: {
+    base: "/space-travelling-nuxt/"
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'space-travelling-nuxt',
@@ -45,6 +49,8 @@ export default {
   build: {},
 
   generate: {
-    dir: 'docs'
+    dir: 'docs',
+    devtools: true,
+    subFolders: false
   }
 };
