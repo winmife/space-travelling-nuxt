@@ -63,7 +63,7 @@ export default {
   text-align: center;
 }
 img {
-  height: 300px;
+  height: 223px;
 }
 .member-role {
   font-size: 16px;
@@ -77,5 +77,9 @@ img {
   width: 90vw;
   border-bottom: 2px solid hsl(var(--clr-white) / 0.25);
   justify-content: center;
+}
+
+.numbered-title {
+  font-size: 16px;
 }
 </style>

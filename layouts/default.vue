@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <img class="vorlage" src="mobile-menu-vorlage.png" alt="" /> -->
+    <!-- <img class="vorlage" src="mobile-menu-vorlage.png" width="" alt="" /> -->
     <the-navbar></the-navbar>
     <Nuxt class="container" />
   </div>

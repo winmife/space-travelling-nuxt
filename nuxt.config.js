@@ -52,5 +52,11 @@ export default {
     dir: 'docs',
     devtools: true,
     subFolders: false
+  },
+
+  vue: {
+    config: {
+      devtools: true
+    }
   }
 };
